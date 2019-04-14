@@ -6887,10 +6887,10 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\common\\common.js":
-/*!***************************************************!*\
-  !*** E:/HBuilderProjects/WU-App/common/common.js ***!
-  \***************************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\common\\common.js":
+/*!***********************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/common/common.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6898,7 +6898,7 @@ module.exports = g;
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // const domain = 'http://127.0.0.1:8000';
 // const domain = 'http://192.168.1.104:8000';
 // const domain = 'http://studyapp.sujiaqun.com';
-var domain = 'http://www.test.com/wp-json/studyapp/v1';var _default =
+var domain = 'http://www.test.com/wp-json/wu-app/v1';var _default =
 
 
 {
@@ -6906,17 +6906,17 @@ var domain = 'http://www.test.com/wp-json/studyapp/v1';var _default =
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\main.js":
-/*!******************************************!*\
-  !*** E:/HBuilderProjects/WU-App/main.js ***!
-  \******************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\main.js":
+/*!**************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/main.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "E:\\HBuilderProjects\\WU-App\\pages.json");
+/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages.json");
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "E:\\HBuilderProjects\\WU-App\\App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
 
 _vue.default.config.productionTip = false;
 
@@ -6930,112 +6930,112 @@ createApp(app).$mount();
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\main.js?{\"page\":\"pages%2Findex%2Fdetail\"}":
-/*!****************************************************************************!*\
-  !*** E:/HBuilderProjects/WU-App/main.js?{"page":"pages%2Findex%2Fdetail"} ***!
-  \****************************************************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\main.js?{\"page\":\"pages%2Findex%2Fdetail\"}":
+/*!************************************************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/main.js?{"page":"pages%2Findex%2Fdetail"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\HBuilderProjects\\WU-App\\pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _detail = _interopRequireDefault(__webpack_require__(/*! ./pages/index/detail.vue */ "E:\\HBuilderProjects\\WU-App\\pages\\index\\detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _detail = _interopRequireDefault(__webpack_require__(/*! ./pages/index/detail.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages\\index\\detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_detail.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\main.js?{\"page\":\"pages%2Findex%2Findex\"}":
-/*!***************************************************************************!*\
-  !*** E:/HBuilderProjects/WU-App/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \***************************************************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\main.js?{\"page\":\"pages%2Findex%2Findex\"}":
+/*!***********************************************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\HBuilderProjects\\WU-App\\pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "E:\\HBuilderProjects\\WU-App\\pages\\index\\index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages\\index\\index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\main.js?{\"page\":\"pages%2Findex%2Flist\"}":
-/*!**************************************************************************!*\
-  !*** E:/HBuilderProjects/WU-App/main.js?{"page":"pages%2Findex%2Flist"} ***!
-  \**************************************************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\main.js?{\"page\":\"pages%2Findex%2Flist\"}":
+/*!**********************************************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/main.js?{"page":"pages%2Findex%2Flist"} ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\HBuilderProjects\\WU-App\\pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _list = _interopRequireDefault(__webpack_require__(/*! ./pages/index/list.vue */ "E:\\HBuilderProjects\\WU-App\\pages\\index\\list.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _list = _interopRequireDefault(__webpack_require__(/*! ./pages/index/list.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages\\index\\list.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_list.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\main.js?{\"page\":\"pages%2Fvideo%2Fdetail\"}":
-/*!****************************************************************************!*\
-  !*** E:/HBuilderProjects/WU-App/main.js?{"page":"pages%2Fvideo%2Fdetail"} ***!
-  \****************************************************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\main.js?{\"page\":\"pages%2Fvideo%2Fdetail\"}":
+/*!************************************************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/main.js?{"page":"pages%2Fvideo%2Fdetail"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\HBuilderProjects\\WU-App\\pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _detail = _interopRequireDefault(__webpack_require__(/*! ./pages/video/detail.vue */ "E:\\HBuilderProjects\\WU-App\\pages\\video\\detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _detail = _interopRequireDefault(__webpack_require__(/*! ./pages/video/detail.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages\\video\\detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_detail.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\main.js?{\"page\":\"pages%2Fvideo%2Flist\"}":
-/*!**************************************************************************!*\
-  !*** E:/HBuilderProjects/WU-App/main.js?{"page":"pages%2Fvideo%2Flist"} ***!
-  \**************************************************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\main.js?{\"page\":\"pages%2Fvideo%2Flist\"}":
+/*!**********************************************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/main.js?{"page":"pages%2Fvideo%2Flist"} ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\HBuilderProjects\\WU-App\\pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _list = _interopRequireDefault(__webpack_require__(/*! ./pages/video/list.vue */ "E:\\HBuilderProjects\\WU-App\\pages\\video\\list.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _list = _interopRequireDefault(__webpack_require__(/*! ./pages/video/list.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages\\video\\list.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_list.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\main.js?{\"page\":\"pages%2Fvideo%2Fvideo\"}":
-/*!***************************************************************************!*\
-  !*** E:/HBuilderProjects/WU-App/main.js?{"page":"pages%2Fvideo%2Fvideo"} ***!
-  \***************************************************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\main.js?{\"page\":\"pages%2Fvideo%2Fvideo\"}":
+/*!***********************************************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/main.js?{"page":"pages%2Fvideo%2Fvideo"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\HBuilderProjects\\WU-App\\pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _video = _interopRequireDefault(__webpack_require__(/*! ./pages/video/video.vue */ "E:\\HBuilderProjects\\WU-App\\pages\\video\\video.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _video = _interopRequireDefault(__webpack_require__(/*! ./pages/video/video.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages\\video\\video.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_video.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\pages.json":
-/*!*********************************************!*\
-  !*** E:/HBuilderProjects/WU-App/pages.json ***!
-  \*********************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages.json":
+/*!*****************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/pages.json ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7044,10 +7044,10 @@ createPage(_video.default);
 
 /***/ }),
 
-/***/ "E:\\HBuilderProjects\\WU-App\\pages\\video\\common\\data.json":
-/*!***************************************************************!*\
-  !*** E:/HBuilderProjects/WU-App/pages/video/common/data.json ***!
-  \***************************************************************/
+/***/ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\pages\\video\\common\\data.json":
+/*!***********************************************************************!*\
+  !*** E:/MyProject/WU-App/uni-app/WU-App/pages/video/common/data.json ***!
+  \***********************************************************************/
 /*! exports provided: list, default */
 /***/ (function(module) {
 
