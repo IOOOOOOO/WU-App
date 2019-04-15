@@ -65,7 +65,7 @@ var _common = _interopRequireDefault(__webpack_require__(/*! ../../common/common
 //
 var _default = { data: function data() {return { // open:false,
       lists: [] };}, onLoad: function onLoad() {var _this = this;uni.showLoading({ title: '加载中...' }); //============================网络请求================================
-    var domain = _common.default.domain;uni.request({ url: domain + '/catelist', success: function success(res) {console.log(res.data);_this.lists = res.data; // console.log(this.lists[0]['sub'])
+    var domain = _common.default.domain;uni.request({ url: domain + '/catelist', success: function success(res) {console.log(res.data);_this.lists = res.data; // this.lists = [];
         uni.hideLoading();} });}, methods: { //=======================折叠面板事件================================
     triggerCollapse: function triggerCollapse(e) {// 如果没有子类执行
       if (!this.lists[e].subCats) {this.goDetailPage(this.lists[e].subCats);

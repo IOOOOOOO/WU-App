@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniList = function uniList() {return __webpack_require__.e(/*! import() | components/uni-list/uni-list */ "components/uni-list/uni-list").then(__webpack_require__.bind(null, /*! @/components/uni-list/uni-list.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\components\\uni-list\\uni-list.vue"));};var uniListItem = function uniListItem() {return __webpack_require__.e(/*! import() | components/uni-list-item/uni-list-item */ "components/uni-list-item/uni-list-item").then(__webpack_require__.bind(null, /*! @/components/uni-list-item/uni-list-item.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\components\\uni-list-item\\uni-list-item.vue"));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -23,6 +23,7 @@
 
 
 
+var _common = _interopRequireDefault(__webpack_require__(/*! ../../common/common.js */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\common\\common.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var uniList = function uniList() {return __webpack_require__.e(/*! import() | components/uni-list/uni-list */ "components/uni-list/uni-list").then(__webpack_require__.bind(null, /*! @/components/uni-list/uni-list.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\components\\uni-list\\uni-list.vue"));};var uniListItem = function uniListItem() {return __webpack_require__.e(/*! import() | components/uni-list-item/uni-list-item */ "components/uni-list-item/uni-list-item").then(__webpack_require__.bind(null, /*! @/components/uni-list-item/uni-list-item.vue */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\components\\uni-list-item\\uni-list-item.vue"));};var _default =
 {
   components: { uniList: uniList, uniListItem: uniListItem },
   data: function data() {
@@ -31,28 +32,16 @@
 
   },
   onLoad: function onLoad(option) {var _this = this;
-    uni.getStorage({
-      key: 'kechenglist',
+    uni.request({
+      url: _common.default.domain + '/video/posts?cat_ID=' + option.cat_ID + '&limit=-1&page=0',
+      method: 'GET',
       success: function success(res) {
-        // 					var names = []
-        // 					for (let item of res.data) {
-        // 						names.push(item.name)
-        // 					}
         _this.list = res.data;
-      } });
-
-  },
-  onUnload: function onUnload() {
-    // 页面卸载的时候清除缓存
-    uni.removeStorage({
-      key: 'kechenglist',
-      success: function success(res) {
       } });
 
   },
   methods: {
     tapCell: function tapCell(videourl) {
-      // console.log(item)
       uni.setStorage({
         key: 'videourl',
         data: videourl,

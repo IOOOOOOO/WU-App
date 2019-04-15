@@ -1,13 +1,12 @@
 <template>
 	<view class="page">
-		
 		<page-head :title="title"></page-head>
 		<view class="uni-product-list">
-			<view class="uni-product" v-for="(product,index) in productList" :key="index">
+			<view class="uni-product" v-for="(product,index) in productList" :key="product.cat_ID">
 				<view class="image-view">
-					<image @click="imgClick(index)" v-if="renderImage" class="uni-product-image" :src="product.image"></image>
+					<image @click="imgClick(product)" v-if="renderImage" class="uni-product-image" :src="product.image"></image>
 				</view>
-				<view class="uni-product-title">{{product.title}}</view>
+				<view class="uni-product-title">{{product.cat_name}}</view>
 				
 			</view>
 		</view>
@@ -25,9 +24,7 @@ export default {
 			
         };
     },
-	onUnload(){
-		
-	},
+
 	onLoad() {
 		
 	    this.loadData();
@@ -46,19 +43,14 @@ export default {
 	    this.loadData();
 	},
     methods: {
-		imgClick:function(index){
-			// console.log('图片被点击了' + this.productList[index].kecheng)
-			uni.setStorage({
-				key:'kechenglist',
-				data:this.productList[index].kecheng,
-				success: () => {
-					uni.navigateTo({
-						url:'list'
-					})
-				}
+		// =========================点击图片进入列表页======================================
+		imgClick:function(e){
+			console.log(e.cat_ID);
+			uni.navigateTo({
+				url:'list?cat_ID='+e.cat_ID
 			})
 		},
-		
+		// ==========================加载数据==============================================
         loadData(action = 'add') {
 			// var datajson = require('./common/data.json');
 			uni.showLoading({
@@ -66,22 +58,12 @@ export default {
 				mask: false
 			});
 			uni.request({
-				url:common.domain + '/videos',
+				url:common.domain + '/video/catelist',
 				success: (res) => {
-					// console.log(res.data);
-					this.productList = res.data['data'];
+					this.productList = res.data;
 					uni.hideLoading()
 				}
 			})
-            // const data = datajson.list;
-
-//             if (action === 'refresh') {
-//                 this.productList = [];
-//             }
-// 
-//             data.forEach(item => {
-//                 this.productList.push(item);
-//             });
         }
     },
     

@@ -6895,10 +6895,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // const domain = 'http://127.0.0.1:8000';
-// const domain = 'http://192.168.1.104:8000';
-// const domain = 'http://studyapp.sujiaqun.com';
-var domain = 'http://www.test.com/wp-json/wu-app/v1';var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var domain = 'http://www.test.com/wp-json/wu-app/v1';var _default =
 
 
 {

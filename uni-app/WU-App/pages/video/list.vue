@@ -1,8 +1,8 @@
 <template>
 	<view class="page">
 		
-		<uni-list v-for="(item,index) in list" :key='index'>
-			<uni-list-item :title="item.name" @click='tapCell(item.videourl)'></uni-list-item>
+		<uni-list v-for="(item,index) in list" :key='item.cat_ID'>
+			<uni-list-item :title="item.post_title" @click='tapCell(item.videoURL)'></uni-list-item>
 			
 		</uni-list>
 		
@@ -13,6 +13,7 @@
 <script>
 	import uniList from '@/components/uni-list/uni-list.vue'
 	import uniListItem from '@/components/uni-list-item/uni-list-item.vue'
+	import common from '../../common/common.js'
 	export default{
 		components: {uniList,uniListItem},
 		data(){
@@ -21,28 +22,16 @@
 			}
 		},
 		onLoad(option) {
-			uni.getStorage({
-				key:'kechenglist',
+			uni.request({
+				url:common.domain + '/video/posts?cat_ID='+option.cat_ID+'&limit=-1&page=0',
+				method:'GET',
 				success: (res) => {
-// 					var names = []
-// 					for (let item of res.data) {
-// 						names.push(item.name)
-// 					}
 					this.list = res.data
 				}
 			})
 		},
-		onUnload:function () {
-			// 页面卸载的时候清除缓存
-			uni.removeStorage({
-				key: 'kechenglist',
-				success: function (res) {
-				}
-			});
-		},
 		methods:{
 			tapCell(videourl){
-				// console.log(item)
 				uni.setStorage({
 					key:'videourl',
 					data:videourl,

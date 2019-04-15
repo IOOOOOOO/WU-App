@@ -3,13 +3,13 @@
 		<!-- 轮播图 -->
 		<swiper class="screen-swiper" :class="'square-dot'" :indicator-dots="true" :circular="true"
 		 :autoplay="true" interval="5000" duration="500">
-			<swiper-item v-for="(item,index) in swiperList" :key="index" @click="gobannerDetail(index)">
+			<swiper-item v-for="(item,index) in swiperList" :key="item.ID" @click="gobannerDetail(index)">
 				<image :src="item.icon" mode="aspectFill"></image>
 			</swiper-item>
 		</swiper>
 		<!-- 文章列表 -->
 		<view class="uni-list">
-			<view class="uni-list-cell" hover-class="uni-list-cell-hover" v-for="(value,key) in listData" :key="key" @click="goDetail(value)">
+			<view class="uni-list-cell" hover-class="uni-list-cell-hover" v-for="(value,key) in listData" :key="value.ID" @click="goDetail(value)">
 				<view class="uni-media-list">
 					<!-- 缩略图 -->
 					<image class="uni-media-list-logo" :src="value.icon"></image>

@@ -24,7 +24,6 @@
 
 
 
-
 var _common = _interopRequireDefault(__webpack_require__(/*! ../../common/common.js */ "E:\\MyProject\\WU-App\\uni-app\\WU-App\\common\\common.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -40,9 +39,7 @@ var _common = _interopRequireDefault(__webpack_require__(/*! ../../common/common
 //
 //
 //
-//
-var _default = { data: function data() {return { title: 'product-list', productList: [], renderImage: false };}, onUnload: function onUnload() {}, onLoad: function onLoad() {var _this = this;this.loadData();setTimeout(function () {
-      _this.renderImage = true;
+var _default = { data: function data() {return { title: 'product-list', productList: [], renderImage: false };}, onLoad: function onLoad() {var _this = this;this.loadData();setTimeout(function () {_this.renderImage = true;
     }, 300);
   },
   onPullDownRefresh: function onPullDownRefresh() {
@@ -56,19 +53,14 @@ var _default = { data: function data() {return { title: 'product-list', productL
     this.loadData();
   },
   methods: {
-    imgClick: function imgClick(index) {
-      // console.log('图片被点击了' + this.productList[index].kecheng)
-      uni.setStorage({
-        key: 'kechenglist',
-        data: this.productList[index].kecheng,
-        success: function success() {
-          uni.navigateTo({
-            url: 'list' });
-
-        } });
+    // =========================点击图片进入列表页======================================
+    imgClick: function imgClick(e) {
+      console.log(e.cat_ID);
+      uni.navigateTo({
+        url: 'list?cat_ID=' + e.cat_ID });
 
     },
-
+    // ==========================加载数据==============================================
     loadData: function loadData() {var _this2 = this;var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'add';
       // var datajson = require('./common/data.json');
       uni.showLoading({
@@ -76,22 +68,12 @@ var _default = { data: function data() {return { title: 'product-list', productL
         mask: false });
 
       uni.request({
-        url: _common.default.domain + '/videos',
+        url: _common.default.domain + '/video/catelist',
         success: function success(res) {
-          // console.log(res.data);
-          _this2.productList = res.data['data'];
+          _this2.productList = res.data;
           uni.hideLoading();
         } });
 
-      // const data = datajson.list;
-
-      //             if (action === 'refresh') {
-      //                 this.productList = [];
-      //             }
-      // 
-      //             data.forEach(item => {
-      //                 this.productList.push(item);
-      //             });
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ "./node_modules/@dcloudio/uni-mp-weixin/dist/index.js")["default"]))
 

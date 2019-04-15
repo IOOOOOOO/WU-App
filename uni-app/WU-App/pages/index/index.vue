@@ -2,7 +2,7 @@
 	
 	<view class="uni-padding-wrap uni-common-pb">
 		<!-- 折叠面板外层列表 -->
-		<view class="uni-card" v-for="(list,index) in lists" :key="index">
+		<view class="uni-card" v-for="(list,index) in lists" :key="list.cat_ID">
 			<view class="uni-list">
 				<view class="uni-list-cell uni-collapse">
 					<!-- 外层列表单元格 -->
@@ -12,7 +12,7 @@
 					</view>
 					<view class="uni-list uni-collapse" :class="list.open ? 'uni-active' : ''">
 						<!-- 折叠面板内层列表 -->
-						<view class="uni-list-cell" hover-class="uni-list-cell-hover" v-for="(item,index2) in lists[index].subCats" :key="index2" @click="goDetailPage(index,index2)">
+						<view class="uni-list-cell" hover-class="uni-list-cell-hover" v-for="(item,index2) in lists[index].subCats" :key="item.cat_ID" @click="goDetailPage(index,index2)">
 							<!-- 内层单元格 -->
 							<view class="uni-list-cell-navigate uni-navigate-right"> {{item.cat_name}} </view>
 						</view>
@@ -46,9 +46,9 @@
 			uni.request({
 				url:domain + '/catelist',
 				success: (res) => {
-					console.log(res.data);
+					console.log(res.data)
 					this.lists = res.data;
-					// console.log(this.lists[0]['sub'])
+					// this.lists = [];
 					uni.hideLoading()
 				}
 			})
