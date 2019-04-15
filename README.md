@@ -18,9 +18,9 @@ const domain = '<http://www.test.com/wp-json/wu-app/v1>';
 
 直接添加分类，添加文章即可，完全可视化管理
 
-![1555313136202](img\1555313136202.png)
+![1555313136202](https://github.com/bawangxx/WU-App/blob/master/img/1555313136202.png)
 
-![1555313211318](img\1555313211318.png)
+![1555313211318](https://github.com/bawangxx/WU-App/blob/master/img/1555313211318.png)
 
 
 
